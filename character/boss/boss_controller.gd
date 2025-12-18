@@ -30,7 +30,7 @@ enum DIR {
 @onready var boss_audio: AudioStreamPlayer2D = $BossAudio
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var explosion_1: GPUParticles2D = $CharacterSprite/HitBoxFront2/StrikeShapeFront2/Explosion1
-@onready var explosion_light_1: PointLight2D = $CharacterSprite/HitBoxFront2/StrikeShapeFront2/ExplosionLight1
+@onready var explosion_light_1: Sprite2D = $CharacterSprite/HitBoxFront2/StrikeShapeFront2/ExplosionLight1
 
 var block_direction: int = -1
 var is_blocking: bool = false
@@ -677,9 +677,9 @@ func _on_attack_area_entered(area: Area2D) -> void:
 			combat_audio_player["parameters/switch_to_clip"] = "Impact Sword and Swipe"
 			combat_audio_player.play()
 			explosion_1.emitting = true
-			explosion_light_1.energy = 1.0
+			explosion_light_1.modulate = Color(1.0, 1.0, 1.0, 0.5)
 			var light_1_tween = create_tween()
-			light_1_tween.tween_property(explosion_light_1, "energy", 0.0, 0.5)
+			light_1_tween.tween_property(explosion_light_1, "modulate", Color(1.0, 1.0, 1.0, 0.0), 0.5)
 			_target.hit(self, current_attack_from_right_damage)
 		elif _target.is_blocking:
 			log_string = "Boss attack on " + str(_target.team) + " from the left was partially blocked for " + str(current_attack_from_left_damage/2) + " damage!"
