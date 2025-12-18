@@ -68,10 +68,12 @@ func _on_game_over(highest_level: int) -> void:
 
 func layer_cleared() -> void:
 	for orc in get_tree().get_nodes_in_group("orc"):
-		orc.remove_from_group("orc")
-		orc.remove_from_group("ai")
+		#orc.remove_from_group("orc")
+		#orc.remove_from_group("ai")
 		orc.remove_from_group("boss")
-		orc.add_to_group("dead")
+		#orc.combat_audio_player.volume_db = -100.0
+		#orc.add_to_group("dead")
+		orc.die(true)
 		orc.hide()
 		orc.set_physics_process(false)
 		if OS.get_name() != "Web":

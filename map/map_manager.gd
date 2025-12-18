@@ -23,7 +23,7 @@ class_name MapManager
 
 var rubble_emitters: Array = []
 var emitter_index : int = 0
-var chunk_height: int = 16  
+var chunk_height: int = 16   
 var chunk_width: int = 32
 var tile_size: int = 128  
 var texture_library: Dictionary = {}  

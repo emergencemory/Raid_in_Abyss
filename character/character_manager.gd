@@ -580,11 +580,12 @@ func hit(attacker:CharacterBody2D, incoming_damage: int) -> void:
 		character_sprite.play("hit")
 		shadow_sprite.play("hit")
 
-func die() -> void:
-	combat_audio_player["parameters/switch_to_clip"] = "Player Death"
-	combat_audio_player.volume_db = 1.0
-	combat_audio_player.pitch_scale = randf_range(0.3, 1.7)
-	combat_audio_player.play()
+func die(_mute : bool = false) -> void:
+	if not _mute:
+		combat_audio_player["parameters/switch_to_clip"] = "Player Death"
+		combat_audio_player.volume_db = 1.0
+		combat_audio_player.pitch_scale = randf_range(0.3, 1.7)
+		combat_audio_player.play()
 	add_to_group("dead")
 	remove_from_group(team)
 	remove_from_group("ai")
@@ -602,7 +603,7 @@ func die() -> void:
 	character_sprite.play("die")
 	var new_tween = create_tween()
 	new_tween.tween_property(character_sprite, "self_modulate", Color(1.5, 1.5, 1.5, 0.8), 5.0)
-	remove_from_group(team)
+	#remove_from_group(team)
 	if is_player:
 		is_player = false
 		get_tree().create_timer(2.0).timeout.connect(get_parent().spawn_player.bind(current_level/2))
