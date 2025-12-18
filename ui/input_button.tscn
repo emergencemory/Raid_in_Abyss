@@ -2,11 +2,11 @@
 
 [ext_resource type="Theme" uid="uid://du20olnqpp5wh" path="res://ui/input_button.tres" id="1_m0td1"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8sys2"]
-bg_color = Color(0.992157, 0.992157, 0.992157, 0.392157)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_igdfu"]
 bg_color = Color(0, 0, 0, 0.392157)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8sys2"]
+bg_color = Color(0.992157, 0.992157, 0.992157, 0.392157)
 
 [node name="InputButton" type="Button"]
 custom_minimum_size = Vector2(0, 18)
@@ -15,9 +15,9 @@ anchor_right = 1.0
 grow_horizontal = 2
 focus_mode = 0
 theme = ExtResource("1_m0td1")
-theme_override_styles/hover = SubResource("StyleBoxFlat_8sys2")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8sys2")
 theme_override_styles/normal = SubResource("StyleBoxFlat_igdfu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8sys2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8sys2")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1

@@ -24,7 +24,6 @@ script = ExtResource("1_1v5rv")
 
 [node name="StatusAnchor" type="Control" parent="."]
 layout_mode = 3
-anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
@@ -62,7 +61,7 @@ tint_progress = Color(3, 1, 1, 1)
 
 [node name="Level" type="Label" parent="StatusAnchor/Status/Health"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -92,7 +91,7 @@ tint_progress = Color(1, 1, 3, 1)
 
 [node name="PlayerKills" type="Label" parent="StatusAnchor/Status/Attack"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -123,7 +122,7 @@ tint_progress = Color(1, 1, 3, 1)
 
 [node name="PlayerDeaths" type="Label" parent="StatusAnchor/Status/Block"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -169,7 +168,7 @@ tint_progress = Color(1, 1, 3, 1)
 
 [node name="CombatLog" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(256, 128)
-anchors_preset = 2
+anchors_preset = -1
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_top = -40.0
@@ -190,19 +189,19 @@ text = "Hide Log"
 layout_mode = 2
 tooltip_text = "log will scroll to bottom, disable if you are looking for something and dont want to be interrupted"
 theme = ExtResource("8_xtm2r")
-theme_override_colors/font_disabled_color = Color(0.169245, 0.169245, 0.169245, 1)
-theme_override_colors/font_hover_pressed_color = Color(0.905882, 0.545098, 0.443137, 1)
-theme_override_colors/font_hover_color = Color(0.905882, 0.545098, 0.443137, 1)
-theme_override_colors/icon_disabled_color = Color(0.237539, 0.237539, 0.237539, 1)
-theme_override_colors/icon_hover_pressed_color = Color(0.905882, 0.545098, 0.443137, 1)
-theme_override_colors/icon_hover_color = Color(0.905882, 0.545098, 0.443137, 1)
-theme_override_colors/icon_pressed_color = Color(0.913725, 0.768627, 0.509804, 1)
-theme_override_colors/icon_focus_color = Color(0.913725, 0.768627, 0.509804, 1)
-theme_override_colors/icon_normal_color = Color(0.913725, 0.768627, 0.509804, 1)
-theme_override_colors/font_outline_color = Color(0.913725, 0.768627, 0.509804, 1)
 theme_override_colors/font_color = Color(0.913725, 0.768627, 0.509804, 1)
 theme_override_colors/font_focus_color = Color(0.913725, 0.768627, 0.509804, 1)
 theme_override_colors/font_pressed_color = Color(0.913725, 0.768627, 0.509804, 1)
+theme_override_colors/font_hover_color = Color(0.905882, 0.545098, 0.443137, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.905882, 0.545098, 0.443137, 1)
+theme_override_colors/font_disabled_color = Color(0.169245, 0.169245, 0.169245, 1)
+theme_override_colors/font_outline_color = Color(0.913725, 0.768627, 0.509804, 1)
+theme_override_colors/icon_normal_color = Color(0.913725, 0.768627, 0.509804, 1)
+theme_override_colors/icon_focus_color = Color(0.913725, 0.768627, 0.509804, 1)
+theme_override_colors/icon_pressed_color = Color(0.913725, 0.768627, 0.509804, 1)
+theme_override_colors/icon_hover_color = Color(0.905882, 0.545098, 0.443137, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.905882, 0.545098, 0.443137, 1)
+theme_override_colors/icon_disabled_color = Color(0.237539, 0.237539, 0.237539, 1)
 button_pressed = true
 text = "Auto Scroll"
 
@@ -210,13 +209,13 @@ text = "Auto Scroll"
 layout_mode = 2
 size_flags_vertical = 3
 tooltip_text = "Shows Damage and other combat-related events"
-theme_override_colors/word_highlighted_color = Color(0.913725, 0.768627, 0.509804, 1)
-theme_override_colors/current_line_color = Color(0.913725, 0.768627, 0.509804, 1)
-theme_override_colors/background_color = Color(0.455, 0.545, 0.663, 0.3)
-theme_override_colors/font_outline_color = Color(0.913725, 0.768627, 0.509804, 1)
-theme_override_colors/font_placeholder_color = Color(0.913725, 0.768627, 0.509804, 1)
-theme_override_colors/font_readonly_color = Color(0.905882, 0.545098, 0.443137, 1)
 theme_override_colors/font_color = Color(0.913725, 0.768627, 0.509804, 1)
+theme_override_colors/font_readonly_color = Color(0.905882, 0.545098, 0.443137, 1)
+theme_override_colors/font_placeholder_color = Color(0.913725, 0.768627, 0.509804, 1)
+theme_override_colors/font_outline_color = Color(0.913725, 0.768627, 0.509804, 1)
+theme_override_colors/background_color = Color(0.455, 0.545, 0.663, 0.3)
+theme_override_colors/current_line_color = Color(0.913725, 0.768627, 0.509804, 1)
+theme_override_colors/word_highlighted_color = Color(0.913725, 0.768627, 0.509804, 1)
 editable = false
 context_menu_enabled = false
 emoji_menu_enabled = false
@@ -229,7 +228,7 @@ scroll_fit_content_width = true
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-anchors_preset = 1
+anchors_preset = -1
 anchor_left = 1.0
 anchor_right = 1.0
 offset_left = -40.0
@@ -283,7 +282,7 @@ bus = &"SFX"
 
 [node name="DialogueContainer" type="PanelContainer" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-anchors_preset = 7
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -371,7 +370,7 @@ text = "Hide Dialogue Box"
 [node name="DevConsole" type="VBoxContainer" parent="."]
 visible = false
 z_index = 10
-anchors_preset = 10
+anchors_preset = -1
 anchor_right = 1.0
 offset_bottom = 207.0
 grow_horizontal = 2
@@ -397,6 +396,7 @@ layout_mode = 2
 placeholder_text = "Command Input"
 
 [node name="TopLeftMargin" type="MarginContainer" parent="."]
+anchors_preset = -1
 offset_right = 4284.0
 offset_bottom = 64.0
 theme = ExtResource("8_xtm2r")
@@ -414,7 +414,7 @@ expand_mode = 3
 
 [node name="KnightKills" type="Label" parent="TopLeftMargin/TopHUD/SwordIcon"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -438,7 +438,7 @@ stretch_mode = 4
 
 [node name="KnightsAlive" type="Label" parent="TopLeftMargin/TopHUD/ShieldIcon"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -463,7 +463,7 @@ stretch_mode = 4
 
 [node name="LayerWaveCount" type="Label" parent="TopLeftMargin/TopHUD/DemonSword"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -488,7 +488,7 @@ stretch_mode = 4
 
 [node name="OrcsAlive" type="Label" parent="TopLeftMargin/TopHUD/RoundShield"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -512,7 +512,7 @@ expand_mode = 3
 
 [node name="OrcKills" type="Label" parent="TopLeftMargin/TopHUD/AxeIcon"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -541,7 +541,7 @@ size_flags_vertical = 0
 text = " X -to-Menu"
 
 [node name="TouchscreenRight" type="MarginContainer" parent="."]
-anchors_preset = 6
+anchors_preset = -1
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
@@ -619,7 +619,6 @@ size_flags_vertical = 2
 
 [node name="TouchscreenLeft" type="Control" parent="."]
 layout_mode = 3
-anchors_preset = 0
 offset_left = 48.0
 offset_top = 304.0
 offset_right = 88.0
@@ -628,7 +627,7 @@ offset_bottom = 344.0
 [node name="MoveLabel" type="Label" parent="TouchscreenLeft"]
 self_modulate = Color(1, 1, 1, 0.8)
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -45.0
@@ -641,6 +640,7 @@ text = "Turn/Move:"
 
 [node name="Joystick" parent="TouchscreenLeft" instance=ExtResource("18_kc1f2")]
 layout_mode = 1
+anchors_preset = -1
 scale = Vector2(1.5, 1.5)
 
 [connection signal="pressed" from="CombatLog/LabelContainer/LogLabel" to="." method="_on_hide_log"]

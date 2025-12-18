@@ -12,7 +12,7 @@ load_path = "res://.godot/imported/axe_large.png-b9bc205d7cbc1b930436d7c03538e47
 [node name="LoadingScreen" type="NinePatchRect"]
 process_mode = 3
 z_index = 5
-anchors_preset = 15
+anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -5.0
@@ -44,7 +44,7 @@ texture = ExtResource("3_w0ar3")
 [node name="ControlContainer" type="VBoxContainer" parent="."]
 z_index = 3
 layout_mode = 1
-anchors_preset = 10
+anchors_preset = -1
 anchor_right = 1.0
 offset_bottom = 15.0
 grow_horizontal = 2

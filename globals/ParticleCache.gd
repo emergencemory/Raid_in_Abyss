@@ -32,3 +32,4 @@ func _ready():
 		particle_instance.set_modulate(Color(1, 1, 1, 0))
 		self.add_child(particle_instance)
 		particle_instance.emitting = true
+	#TODO queue free

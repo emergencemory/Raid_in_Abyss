@@ -29,7 +29,7 @@ grow_vertical = 2
 clip_children = 2
 clip_contents = true
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -45,7 +45,7 @@ texture = ExtResource("2_l87h4")
 [node name="TextureRect3" type="TextureRect" parent="DisplayRankC/TextureRect2"]
 self_modulate = Color(0, 0, 0, 0.7)
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -60,7 +60,7 @@ texture = ExtResource("1_5eixk")
 
 [node name="TextureRect" type="TextureRect" parent="DisplayRankC"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -84,7 +84,7 @@ grow_vertical = 2
 
 [node name="TextureRect2" type="TextureRect" parent="DisplayRankB"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -100,7 +100,7 @@ texture = ExtResource("2_l87h4")
 [node name="TextureRect3" type="TextureRect" parent="DisplayRankB/TextureRect2"]
 self_modulate = Color(0, 0, 0, 0.7)
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -115,7 +115,7 @@ texture = ExtResource("2_j1fe5")
 
 [node name="TextureRect" type="TextureRect" parent="DisplayRankB"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -266,7 +266,7 @@ size_flags_vertical = 3
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer/KnightGrid/KnightIcon"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -339,7 +339,7 @@ size_flags_vertical = 3
 
 [node name="TextureRect2" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer3/VBoxContainer3/EnemyGrid/OrcIcon"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -362,7 +362,7 @@ size_flags_vertical = 3
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer3/VBoxContainer3/EnemyGrid/BossIcon"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5

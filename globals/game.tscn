@@ -11,11 +11,11 @@ colors = PackedColorArray(0, 0, 0, 1, 0.352941, 0.34902, 0.290196, 1, 0.521345, 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_nqac0"]
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_yb3ym"]
-seamless = true
-bump_strength = 3.5
-normalize = false
-color_ramp = SubResource("Gradient_ehmke")
 noise = SubResource("FastNoiseLite_nqac0")
+color_ramp = SubResource("Gradient_ehmke")
+seamless = true
+normalize = false
+bump_strength = 3.5
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_y5hx0"]
 shader = ExtResource("3_3q0u3")
