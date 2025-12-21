@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bfu3esac8trv1"]
+[gd_scene load_steps=20 format=3 uid="uid://bfu3esac8trv1"]
 
 [ext_resource type="Script" uid="uid://c4s2x55wkc3tv" path="res://ui/hud.gd" id="1_1v5rv"]
 [ext_resource type="Texture2D" uid="uid://o1ir26vc6gwh" path="res://ui/knight_icon.png" id="1_en2x2"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cffwkg4co7w7g" path="res://ui/kite_shield_icon_2.png" id="9_m0eg6"]
 [ext_resource type="Texture2D" uid="uid://cacfwpsn0vp63" path="res://ui/sword_large_horizontal.png" id="9_so1yu"]
 [ext_resource type="Texture2D" uid="uid://bvehwr2g2ff3p" path="res://ui/balrog_sword_large_horizontal.png" id="9_spcu4"]
+[ext_resource type="Theme" uid="uid://b048535bw5iav" path="res://ui/theme_tutorial.tres" id="10_6mpex"]
 [ext_resource type="Texture2D" uid="uid://dop34ibp1gt6v" path="res://ui/round_shield_large.png" id="11_b00kl"]
 [ext_resource type="Texture2D" uid="uid://bdno7pb3g5ijk" path="res://ui/round_shield_icon.png" id="12_u6vop"]
 [ext_resource type="Texture2D" uid="uid://bu8a5njdwlfri" path="res://ui/axe_large_horizontal.png" id="13_65xic"]
@@ -210,13 +211,7 @@ text = "Auto Scroll"
 layout_mode = 2
 size_flags_vertical = 3
 tooltip_text = "Shows Damage and other combat-related events"
-theme_override_colors/font_color = Color(0.913725, 0.768627, 0.509804, 1)
-theme_override_colors/font_readonly_color = Color(0.905882, 0.545098, 0.443137, 1)
-theme_override_colors/font_placeholder_color = Color(0.913725, 0.768627, 0.509804, 1)
-theme_override_colors/font_outline_color = Color(0.913725, 0.768627, 0.509804, 1)
-theme_override_colors/background_color = Color(0.455, 0.545, 0.663, 0.3)
-theme_override_colors/current_line_color = Color(0.913725, 0.768627, 0.509804, 1)
-theme_override_colors/word_highlighted_color = Color(0.913725, 0.768627, 0.509804, 1)
+theme = ExtResource("10_6mpex")
 editable = false
 context_menu_enabled = false
 emoji_menu_enabled = false
@@ -282,7 +277,6 @@ volume_db = -0.5
 bus = &"SFX"
 
 [node name="DialogueContainer" type="PanelContainer" parent="."]
-self_modulate = Color(1, 1, 1, 0)
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -296,7 +290,12 @@ grow_vertical = 0
 size_flags_vertical = 8
 theme = ExtResource("8_xtm2r")
 
+[node name="Panel" type="Panel" parent="DialogueContainer"]
+show_behind_parent = true
+layout_mode = 2
+
 [node name="RoundShield" type="NinePatchRect" parent="DialogueContainer"]
+visible = false
 self_modulate = Color(1, 1, 1, 0.6)
 layout_mode = 2
 texture = ExtResource("12_u6vop")

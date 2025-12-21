@@ -1,6 +1,8 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://ifeuanprlh1n"]
+[gd_resource type="Theme" load_steps=10 format=3 uid="uid://ifeuanprlh1n"]
 
 [ext_resource type="FontFile" uid="uid://cxd4pqdfbnn67" path="res://ui/Merriweather-VariableFont_opsz,wdth,wght.ttf" id="1_4lnw6"]
+[ext_resource type="Texture2D" uid="uid://bhrgaattu4x41" path="res://ui/raidpanel.png" id="1_o5who"]
+[ext_resource type="Texture2D" uid="uid://c1bd4sb2tpye1" path="res://ui/raidborder.png" id="2_3aif0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wegu3"]
 content_margin_left = 1.0
@@ -80,6 +82,27 @@ expand_margin_top = 1.0
 expand_margin_right = 1.0
 expand_margin_bottom = 1.0
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7m738"]
+texture = ExtResource("1_o5who")
+expand_margin_left = 16.0
+expand_margin_top = 24.0
+expand_margin_right = 16.0
+expand_margin_bottom = 12.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+modulate_color = Color(1, 1, 1, 0.70000005)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pwjpm"]
+texture = ExtResource("2_3aif0")
+texture_margin_left = 33.46463
+texture_margin_top = 35.753742
+texture_margin_right = 29.54044
+texture_margin_bottom = 23.545145
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(0, 0, 96, 96)
+modulate_color = Color(1, 1, 1, 0.70000005)
+
 [resource]
 default_font = ExtResource("1_4lnw6")
 Button/colors/font_color = Color(0.913725, 0.768627, 0.509804, 1)
@@ -97,3 +120,5 @@ Button/styles/hover = SubResource("StyleBoxFlat_4lnw6")
 Button/styles/normal = SubResource("StyleBoxFlat_yl8sm")
 Button/styles/pressed = SubResource("StyleBoxFlat_o5who")
 Label/colors/font_color = Color(0.957549, 0.850771, 0.659616, 1)
+Panel/styles/panel = SubResource("StyleBoxTexture_7m738")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_pwjpm")

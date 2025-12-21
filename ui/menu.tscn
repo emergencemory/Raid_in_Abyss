@@ -1,14 +1,25 @@
-[gd_scene load_steps=10 format=3 uid="uid://g3half8qtsa"]
+[gd_scene load_steps=12 format=3 uid="uid://g3half8qtsa"]
 
 [ext_resource type="Script" uid="uid://cagls3xcdvut3" path="res://ui/menu.gd" id="1_4c782"]
 [ext_resource type="Script" uid="uid://camn067plnl2x" path="res://ui/input_settings.gd" id="1_bwjgb"]
 [ext_resource type="PackedScene" uid="uid://bu75qpwk3isq6" path="res://ui/input_button.tscn" id="2_udkah"]
+[ext_resource type="Texture2D" uid="uid://bhrgaattu4x41" path="res://ui/raidpanel.png" id="3_2fd1n"]
 [ext_resource type="FontFile" uid="uid://c2fmrsalewht8" path="res://ui/scribish.ttf" id="3_l8jcj"]
 [ext_resource type="Theme" uid="uid://cn38knnhoa4y8" path="res://ui/menu_theme.tres" id="4_7toyc"]
 [ext_resource type="Texture2D" uid="uid://dop34ibp1gt6v" path="res://ui/round_shield_large.png" id="5_0bcp5"]
 [ext_resource type="Theme" uid="uid://du20olnqpp5wh" path="res://ui/input_button.tres" id="5_cop0s"]
 [ext_resource type="Texture2D" uid="uid://bef5guqs7615m" path="res://ui/boss_jump.png" id="6_l8jcj"]
 [ext_resource type="Texture2D" uid="uid://d1bvxpyg6v26k" path="res://ui/knight_large_2.png" id="7_cp6tm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cop0s"]
+texture = ExtResource("3_2fd1n")
+expand_margin_left = 8.0
+expand_margin_top = 8.0
+expand_margin_right = 8.0
+expand_margin_bottom = 8.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+modulate_color = Color(1, 1, 1, 0.70000005)
 
 [node name="menu" type="CanvasLayer"]
 script = ExtResource("1_4c782")
@@ -28,7 +39,15 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Title" type="Label" parent="MenuDivider/TitleScreen"]
+[node name="PanelContainer" type="PanelContainer" parent="MenuDivider/TitleScreen"]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="MenuDivider/TitleScreen/PanelContainer"]
+show_behind_parent = true
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_cop0s")
+
+[node name="Title" type="Label" parent="MenuDivider/TitleScreen/PanelContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
