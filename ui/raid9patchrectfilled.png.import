@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1lj8xwfvspbh"
-path="res://.godot/imported/firefox_xsZUbqxmpP.png-4c3219b57527187e4d29aa928ad3ace6.ctex"
+uid="uid://bdfmsvw4txyt1"
+path="res://.godot/imported/raid9patchrectfilled.png-09d6a8092d46124f6e48dc0be35258c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/firefox_xsZUbqxmpP.png"
-dest_files=["res://.godot/imported/firefox_xsZUbqxmpP.png-4c3219b57527187e4d29aa928ad3ace6.ctex"]
+source_file="res://ui/raid9patchrectfilled.png"
+dest_files=["res://.godot/imported/raid9patchrectfilled.png-09d6a8092d46124f6e48dc0be35258c4.ctex"]
 
 [params]
 

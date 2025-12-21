@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dj5l2ydgj4kph"
-path="res://.godot/imported/firefox_RYJehahgFn.png-399b85a48e85351591d2f42a8e48335d.ctex"
+uid="uid://c1bd4sb2tpye1"
+path="res://.godot/imported/raidborder.png-bed7f7e5b0f8edf3f0eddba1651dec1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/firefox_RYJehahgFn.png"
-dest_files=["res://.godot/imported/firefox_RYJehahgFn.png-399b85a48e85351591d2f42a8e48335d.ctex"]
+source_file="res://ui/raidborder.png"
+dest_files=["res://.godot/imported/raidborder.png-bed7f7e5b0f8edf3f0eddba1651dec1d.ctex"]
 
 [params]
 

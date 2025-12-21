@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bau0728fvcys0"
-path="res://.godot/imported/firefox_BMLIRSZWP4.png-145c83325580230b8ae90f86c46ba3c9.ctex"
+uid="uid://ppegh0ih7ud3"
+path="res://.godot/imported/raidpanel2.png-4f12e9d333e33dff13cc0a7db6c4d640.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/firefox_BMLIRSZWP4.png"
-dest_files=["res://.godot/imported/firefox_BMLIRSZWP4.png-145c83325580230b8ae90f86c46ba3c9.ctex"]
+source_file="res://ui/raidpanel2.png"
+dest_files=["res://.godot/imported/raidpanel2.png-4f12e9d333e33dff13cc0a7db6c4d640.ctex"]
 
 [params]
 

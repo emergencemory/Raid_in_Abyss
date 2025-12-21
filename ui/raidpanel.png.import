@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpb8f2hox4774"
-path="res://.godot/imported/firefox_Ml1sP8HSLB.png-488c0cd8c714aa7a89c88477c10e6f98.ctex"
+uid="uid://bhrgaattu4x41"
+path="res://.godot/imported/raidpanel.png-31ed8bc1b0e7e5df759e54a364efc47e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/firefox_Ml1sP8HSLB.png"
-dest_files=["res://.godot/imported/firefox_Ml1sP8HSLB.png-488c0cd8c714aa7a89c88477c10e6f98.ctex"]
+source_file="res://ui/raidpanel.png"
+dest_files=["res://.godot/imported/raidpanel.png-31ed8bc1b0e7e5df759e54a364efc47e.ctex"]
 
 [params]
 
