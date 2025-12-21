@@ -1,10 +1,8 @@
-[gd_resource type="Theme" load_steps=14 format=3 uid="uid://cn38knnhoa4y8"]
+[gd_resource type="Theme" load_steps=26 format=3 uid="uid://cn38knnhoa4y8"]
 
-[ext_resource type="Texture2D" uid="uid://bqktonvo7qquc" path="res://ui/sword_small_horizontal.png" id="3_w5svx"]
-[ext_resource type="Texture2D" uid="uid://dop34ibp1gt6v" path="res://ui/round_shield_large.png" id="4_tluwm"]
-[ext_resource type="Texture2D" uid="uid://cffwkg4co7w7g" path="res://ui/kite_shield_icon_2.png" id="5_l0kx3"]
+[ext_resource type="FontFile" uid="uid://cxd4pqdfbnn67" path="res://ui/Merriweather-VariableFont_opsz,wdth,wght.ttf" id="1_3ymh7"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y7e74"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l8jcj"]
 content_margin_left = 8.0
 content_margin_top = 8.0
 content_margin_right = 8.0
@@ -12,23 +10,71 @@ content_margin_bottom = 8.0
 bg_color = Color(0.25, 0.25, 0.25, 1)
 corner_detail = 1
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fvhrp"]
-texture = ExtResource("5_l0kx3")
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cp6tm"]
+load_path = "res://.godot/imported/kite_shield_icon_2.png-c4c1be51e9edfbe46d5779ef54b70653.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2fd1n"]
+texture = SubResource("CompressedTexture2D_cp6tm")
 texture_margin_left = 38.2536
 texture_margin_top = 55.2974
 texture_margin_right = 40.1197
 texture_margin_bottom = 43.3852
 region_rect = Rect2(12.3254, 6.25839, 115.694, 126.89)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_il8ly"]
-texture = ExtResource("5_l0kx3")
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cop0s"]
+load_path = "res://.godot/imported/kite_shield_icon_2.png-c4c1be51e9edfbe46d5779ef54b70653.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oumb1"]
+texture = SubResource("CompressedTexture2D_cop0s")
 texture_margin_left = 38.2536
 texture_margin_top = 55.2974
 texture_margin_right = 40.1197
 texture_margin_bottom = 43.3852
 region_rect = Rect2(12.3254, 6.25839, 115.694, 126.89)
 
-[sub_resource type="Image" id="Image_sojpq"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7toyc"]
+load_path = "res://.godot/imported/kite_shield_icon_2.png-c4c1be51e9edfbe46d5779ef54b70653.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ybgh7"]
+texture = SubResource("CompressedTexture2D_7toyc")
+texture_margin_left = 38.2536
+texture_margin_top = 55.2974
+texture_margin_right = 40.1197
+texture_margin_bottom = 43.3852
+region_rect = Rect2(12.3254, 6.25839, 115.694, 126.89)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k3j3x"]
+load_path = "res://.godot/imported/kite_shield_icon_2.png-c4c1be51e9edfbe46d5779ef54b70653.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u22un"]
+texture = SubResource("CompressedTexture2D_k3j3x")
+texture_margin_left = 38.2536
+texture_margin_top = 55.2974
+texture_margin_right = 40.1197
+texture_margin_bottom = 43.3852
+region_rect = Rect2(12.3254, 6.25839, 115.694, 126.89)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_akon5"]
+load_path = "res://.godot/imported/kite_shield_icon_2.png-c4c1be51e9edfbe46d5779ef54b70653.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c5cit"]
+texture = SubResource("CompressedTexture2D_akon5")
+texture_margin_left = 38.2536
+texture_margin_top = 55.2974
+texture_margin_right = 40.1197
+texture_margin_bottom = 43.3852
+region_rect = Rect2(12.3254, 6.25839, 115.694, 126.89)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lf6dv"]
+load_path = "res://.godot/imported/kite_shield_icon_2.png-c4c1be51e9edfbe46d5779ef54b70653.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_is7kr"]
+load_path = "res://.godot/imported/kite_shield_icon_2.png-c4c1be51e9edfbe46d5779ef54b70653.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wb0cg"]
+load_path = "res://.godot/imported/kite_shield_icon_2.png-c4c1be51e9edfbe46d5779ef54b70653.ctex"
+
+[sub_resource type="Image" id="Image_vmbxc"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 64, 255, 255, 255, 64, 0, 0, 0, 0),
 "format": "RGBA8",
@@ -37,10 +83,10 @@ data = {
 "width": 4
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_u64f1"]
-image = SubResource("Image_sojpq")
+[sub_resource type="ImageTexture" id="ImageTexture_ryq6k"]
+image = SubResource("Image_vmbxc")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1uptb"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_74wlk"]
 bg_color = Color(0.212, 0.431, 0.661, 0.8)
 border_width_left = 200
 border_width_top = 50
@@ -53,15 +99,34 @@ shadow_color = Color(0, 0, 0, 0.1)
 shadow_size = 1
 shadow_offset = Vector2(50, 10)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q6c3w"]
-texture = ExtResource("3_w5svx")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tivod"]
+bg_color = Color(0.212, 0.431, 0.661, 0.8)
+border_width_left = 200
+border_width_top = 50
+border_width_bottom = 50
+border_color = Color(0.2, 0.2, 0.2, 0)
+border_blend = true
+corner_radius_top_left = 200
+corner_radius_bottom_left = 200
+shadow_color = Color(0, 0, 0, 0.1)
+shadow_size = 1
+shadow_offset = Vector2(50, 10)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oavey"]
+load_path = "res://.godot/imported/sword_small_horizontal.png-73ecfd9413741105da3c46907444af19.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fxqrp"]
+texture = SubResource("CompressedTexture2D_oavey")
 texture_margin_left = 90.3283
 texture_margin_top = 31.256
 texture_margin_right = 26.1526
 texture_margin_bottom = 31.9811
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u3tyk"]
-texture = ExtResource("4_tluwm")
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oakdn"]
+load_path = "res://.godot/imported/round_shield_large.png-5d394f6addcef22a9415c5d502d3c9d2.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_our2b"]
+texture = SubResource("CompressedTexture2D_oakdn")
 texture_margin_left = 226.363
 texture_margin_top = 205.142
 texture_margin_right = 224.005
@@ -70,39 +135,40 @@ axis_stretch_horizontal = 2
 axis_stretch_vertical = 2
 region_rect = Rect2(45.1262, 29.7992, 921.958, 936.106)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ae6r1"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y3wln"]
 bg_color = Color(0.2, 0.2, 1, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7i1di"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wwtu6"]
 bg_color = Color(1, 0.2, 0.2, 1)
 
 [resource]
+default_font = ExtResource("1_3ymh7")
 AcceptDialog/constants/buttons_separation = 10
-AcceptDialog/styles/panel = SubResource("StyleBoxFlat_y7e74")
+AcceptDialog/styles/panel = SubResource("StyleBoxFlat_l8jcj")
 Button/colors/font_color = Color(0.914789, 0.770427, 0.510385, 1)
 Button/colors/font_focus_color = Color(0.913725, 0.768627, 0.509804, 1)
 Button/colors/font_hover_color = Color(0.904586, 0.545887, 0.444382, 1)
 Button/colors/font_hover_pressed_color = Color(0.905882, 0.545098, 0.443137, 1)
 Button/colors/font_pressed_color = Color(0.905882, 0.545098, 0.443137, 1)
-Button/styles/disabled = SubResource("StyleBoxTexture_fvhrp")
-Button/styles/focus = SubResource("StyleBoxTexture_fvhrp")
-Button/styles/hover = SubResource("StyleBoxTexture_fvhrp")
-Button/styles/normal = SubResource("StyleBoxTexture_fvhrp")
-Button/styles/pressed = SubResource("StyleBoxTexture_il8ly")
+Button/styles/disabled = SubResource("StyleBoxTexture_2fd1n")
+Button/styles/focus = SubResource("StyleBoxTexture_oumb1")
+Button/styles/hover = SubResource("StyleBoxTexture_ybgh7")
+Button/styles/normal = SubResource("StyleBoxTexture_u22un")
+Button/styles/pressed = SubResource("StyleBoxTexture_c5cit")
 HSlider/constants/center_grabber = 0
 HSlider/constants/grabber_offset = 0
-HSlider/icons/grabber = ExtResource("5_l0kx3")
-HSlider/icons/grabber_disabled = ExtResource("5_l0kx3")
-HSlider/icons/grabber_highlight = ExtResource("5_l0kx3")
-HSlider/icons/tick = SubResource("ImageTexture_u64f1")
-HSlider/styles/grabber_area = SubResource("StyleBoxFlat_1uptb")
-HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_1uptb")
-HSlider/styles/slider = SubResource("StyleBoxTexture_q6c3w")
+HSlider/icons/grabber = SubResource("CompressedTexture2D_lf6dv")
+HSlider/icons/grabber_disabled = SubResource("CompressedTexture2D_is7kr")
+HSlider/icons/grabber_highlight = SubResource("CompressedTexture2D_wb0cg")
+HSlider/icons/tick = SubResource("ImageTexture_ryq6k")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_74wlk")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_tivod")
+HSlider/styles/slider = SubResource("StyleBoxTexture_fxqrp")
 Label/colors/font_color = Color(0.950817, 0.849293, 0.564548, 1)
 Label/colors/font_outline_color = Color(0, 0, 0, 1)
 Label/colors/font_shadow_color = Color(0, 0, 0, 0.3)
-Panel/styles/panel = SubResource("StyleBoxTexture_u3tyk")
+Panel/styles/panel = SubResource("StyleBoxTexture_our2b")
 ProgressBar/colors/font_color = Color(0.781938, 0.625867, 0.393029, 1)
 ProgressBar/colors/font_outline_color = Color(0, 0, 0, 1)
-ProgressBar/styles/background = SubResource("StyleBoxFlat_ae6r1")
-ProgressBar/styles/fill = SubResource("StyleBoxFlat_7i1di")
+ProgressBar/styles/background = SubResource("StyleBoxFlat_y3wln")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_wwtu6")

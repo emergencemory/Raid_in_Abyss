@@ -1,0 +1,97 @@
+[gd_resource type="Theme" load_steps=14 format=3 uid="uid://bbuwnlm1mjl3"]
+
+[ext_resource type="Texture2D" uid="uid://cyxmksqg8w441" path="res://ui/arcuitile.png" id="1_ir3gy"]
+[ext_resource type="Texture2D" uid="uid://bqhiov4ca7s47" path="res://ui/seal.png" id="2_ir3gy"]
+[ext_resource type="Texture2D" uid="uid://cv3yjhaw0wdvh" path="res://ui/scroll.png" id="2_pvcr1"]
+[ext_resource type="Texture2D" uid="uid://drk7gv4ci8xpl" path="res://ui/seal_small.png" id="3_pa8en"]
+[ext_resource type="Texture2D" uid="uid://evlkbbsoudmn" path="res://ui/seal_small_dark.png" id="4_1tmt2"]
+[ext_resource type="FontFile" uid="uid://dqy6ou1ngcw3k" path="res://ui/Merriweather-VariableFont_opsz,wdth,wght.ttf" id="4_pa8en"]
+[ext_resource type="StyleBox" uid="uid://tpmdlyg2feff" path="res://ui/writing_stylebox.tres" id="5_poir4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3fgq6"]
+texture = ExtResource("1_ir3gy")
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(3.3, 2.3, 57, 58.5)
+modulate_color = Color(0.2374612, 0.2374612, 0.2374612, 0.5)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hjmg0"]
+texture = ExtResource("2_ir3gy")
+expand_margin_left = 6.0
+expand_margin_top = 4.0
+expand_margin_right = 6.0
+expand_margin_bottom = 4.0
+modulate_color = Color(1, 0.8729805, 0.8714004, 0.721)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rtqkv"]
+texture = ExtResource("2_ir3gy")
+expand_margin_left = 6.0
+expand_margin_top = 4.0
+expand_margin_right = 6.0
+expand_margin_bottom = 4.0
+modulate_color = Color(1, 0.8729805, 0.8714004, 0.51500005)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fehmp"]
+texture = ExtResource("2_ir3gy")
+expand_margin_left = 6.0
+expand_margin_top = 4.0
+expand_margin_right = 6.0
+expand_margin_bottom = 4.0
+modulate_color = Color(1, 0.7251486, 0.72074693, 0.8352941)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iqtc0"]
+texture = ExtResource("2_pvcr1")
+expand_margin_left = 4.0
+expand_margin_top = 4.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+region_rect = Rect2(7.024727, 4.7900677, 114.90816, 120.653564)
+modulate_color = Color(1, 1, 1, 0.5)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7any1"]
+texture = ExtResource("2_pvcr1")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+expand_margin_left = 4.0
+expand_margin_top = 4.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+axis_stretch_vertical = 1
+region_rect = Rect2(0.6409378, 3.992094, 127.516136, 121.611145)
+draw_center = false
+
+[resource]
+default_font = ExtResource("4_pa8en")
+Button/colors/font_color = Color(0.44422638, 0, 0, 1)
+Button/styles/disabled = SubResource("StyleBoxTexture_3fgq6")
+Button/styles/hover = SubResource("StyleBoxTexture_hjmg0")
+Button/styles/normal = SubResource("StyleBoxTexture_rtqkv")
+Button/styles/pressed = SubResource("StyleBoxTexture_fehmp")
+CheckBox/colors/font_color = Color(0.3882353, 0.3019608, 0.14117648, 1)
+CheckBox/colors/font_focus_color = Color(0.3882353, 0.3019608, 0.14117648, 1)
+CheckBox/colors/font_hover_pressed_color = Color(0.3882353, 0.3019608, 0.14117648, 1)
+CheckBox/colors/font_pressed_color = Color(0.3882353, 0.3019608, 0.14117648, 1)
+CheckBox/icons/checked = ExtResource("3_pa8en")
+CheckBox/icons/checked_disabled = ExtResource("4_1tmt2")
+CheckBox/icons/unchecked = ExtResource("4_1tmt2")
+CheckBox/styles/hover = ExtResource("5_poir4")
+CheckBox/styles/normal = ExtResource("5_poir4")
+CheckBox/styles/pressed = ExtResource("5_poir4")
+CheckButton/colors/font_color = Color(0.3882353, 0.3019608, 0.14117648, 1)
+CheckButton/colors/font_focus_color = Color(0.3882353, 0.3019608, 0.14117648, 1)
+CheckButton/colors/font_pressed_color = Color(0.3882353, 0.3019608, 0.14117648, 1)
+CheckButton/icons/checked = ExtResource("3_pa8en")
+CheckButton/icons/unchecked = ExtResource("4_1tmt2")
+CheckButton/styles/hover = ExtResource("5_poir4")
+CheckButton/styles/hover_pressed = ExtResource("5_poir4")
+CheckButton/styles/normal = ExtResource("5_poir4")
+CheckButton/styles/pressed = ExtResource("5_poir4")
+Label/colors/font_color = Color(0.38857287, 0.30153242, 0.1428257, 1)
+Panel/styles/panel = SubResource("StyleBoxTexture_iqtc0")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_7any1")

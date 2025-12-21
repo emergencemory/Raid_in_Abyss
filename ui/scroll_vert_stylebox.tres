@@ -1,0 +1,13 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://cdwhnmswuwo2m"]
+
+[ext_resource type="Texture2D" uid="uid://cij0113i55doj" path="res://ui/scroll_vert.png" id="1_ntmxh"]
+
+[resource]
+texture = ExtResource("1_ntmxh")
+texture_margin_left = 6.0
+texture_margin_top = 9.033618
+texture_margin_right = 6.0
+texture_margin_bottom = 7.7555413
+axis_stretch_vertical = 1
+region_rect = Rect2(-1.8814392, -0.24468231, 129.88144, 128.24469)
+draw_center = false

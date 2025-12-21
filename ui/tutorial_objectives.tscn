@@ -1,0 +1,116 @@
+[gd_scene load_steps=6 format=3 uid="uid://clvvnbkhctuh3"]
+
+[ext_resource type="Theme" uid="uid://b048535bw5iav" path="res://ui/theme_tutorial.tres" id="1_64143"]
+[ext_resource type="Script" uid="uid://pf66ckspdev2" path="res://ui/tutorial_objectives.gd" id="2_e15c0"]
+[ext_resource type="StyleBox" uid="uid://tpmdlyg2feff" path="res://ui/writing_stylebox.tres" id="2_rl3jd"]
+[ext_resource type="FontFile" uid="uid://c2fmrsalewht8" path="res://ui/scribish.ttf" id="3_e15c0"]
+[ext_resource type="StyleBox" uid="uid://cdwhnmswuwo2m" path="res://ui/scroll_vert_stylebox.tres" id="4_hiuh6"]
+
+[node name="ObjectivesMargin" type="MarginContainer"]
+offset_right = 290.0
+offset_bottom = 124.0
+size_flags_vertical = 0
+mouse_filter = 2
+theme = ExtResource("1_64143")
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+script = ExtResource("2_e15c0")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+
+[node name="TutorialPanel" type="Panel" parent="PanelContainer"]
+show_behind_parent = true
+layout_mode = 2
+mouse_filter = 2
+
+[node name="ObjectivesContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="ObjectivesContainer"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_rl3jd")
+
+[node name="Panel" type="Panel" parent="ObjectivesContainer/PanelContainer"]
+show_behind_parent = true
+layout_mode = 2
+
+[node name="ObjectiveLabel" type="Label" parent="ObjectivesContainer/PanelContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_e15c0")
+text = "Tutorial Objectives:"
+horizontal_alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="ObjectivesContainer"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_rl3jd")
+
+[node name="Panel" type="Panel" parent="ObjectivesContainer/PanelContainer2"]
+show_behind_parent = true
+layout_mode = 2
+
+[node name="ButtonContainer" type="HBoxContainer" parent="ObjectivesContainer/PanelContainer2"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="ObjectivesContainer/PanelContainer2/ButtonContainer"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_rl3jd")
+
+[node name="Panel" type="Panel" parent="ObjectivesContainer/PanelContainer2/ButtonContainer/PanelContainer"]
+show_behind_parent = true
+layout_mode = 2
+
+[node name="HideCompletedButton" type="CheckButton" parent="ObjectivesContainer/PanelContainer2/ButtonContainer/PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+button_pressed = true
+text = "Hide Completed"
+
+[node name="PanelContainer2" type="PanelContainer" parent="ObjectivesContainer/PanelContainer2/ButtonContainer"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_rl3jd")
+
+[node name="Panel" type="Panel" parent="ObjectivesContainer/PanelContainer2/ButtonContainer/PanelContainer2"]
+show_behind_parent = true
+layout_mode = 2
+
+[node name="MinimizeListButton" type="Button" parent="ObjectivesContainer/PanelContainer2/ButtonContainer/PanelContainer2"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Minimize"
+
+[node name="PanelContainer3" type="PanelContainer" parent="ObjectivesContainer/PanelContainer2/ButtonContainer"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_rl3jd")
+
+[node name="Panel" type="Panel" parent="ObjectivesContainer/PanelContainer2/ButtonContainer/PanelContainer3"]
+show_behind_parent = true
+layout_mode = 2
+
+[node name="ShowListButton" type="Button" parent="ObjectivesContainer/PanelContainer2/ButtonContainer/PanelContainer3"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Show Objectives"
+
+[node name="PanelContainer3" type="PanelContainer" parent="ObjectivesContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = ExtResource("4_hiuh6")
+
+[node name="Panel" type="Panel" parent="ObjectivesContainer/PanelContainer3"]
+layout_mode = 2
+
+[node name="CheckBoxContainer" type="VBoxContainer" parent="ObjectivesContainer/PanelContainer3"]
+layout_mode = 2
+
+[node name="Objective1" type="CheckBox" parent="ObjectivesContainer/PanelContainer3/CheckBoxContainer"]
+visible = false
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 11
+button_mask = 0
+text = "Complete Objective 1"

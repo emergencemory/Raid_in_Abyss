@@ -1,0 +1,14 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://tpmdlyg2feff"]
+
+[ext_resource type="Texture2D" uid="uid://ckf2y7kbve8l3" path="res://ui/arcpanel2.png" id="1_wvpcw"]
+
+[resource]
+texture = ExtResource("1_wvpcw")
+texture_margin_left = 3.2154922
+texture_margin_top = 3.706876
+texture_margin_right = 3.706876
+texture_margin_bottom = 3.133595
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(1.7331467, 1.3577888, 60.030712, 58.802254)
+draw_center = false
