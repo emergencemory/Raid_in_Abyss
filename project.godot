@@ -8,12 +8,16 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="Raid in Abyss"
 config/description="For Ludum Dare 57 by Emery Smith and Smthngclvr.  staticleapstudios.com https://youtube.com/@smthngclvr?feature=shareda"
 run/main_scene="uid://dx3ishtlsfhpc"
-config/features=PackedStringArray("4.5", "GL Compatibility")
+config/features=PackedStringArray("4.7", "GL Compatibility")
 boot_splash/image="uid://c2ifcf7vn71kj"
 config/icon="uid://dkewulci8nsat"
 run/physics_ticks_per_second=60
